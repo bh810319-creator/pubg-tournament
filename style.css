@@ -1,0 +1,282 @@
+/* গ্লোবাল স্টাইল এবং রিসেট */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    line-height: 1.6;
+}
+
+/* নেভিগেশন বার */
+header {
+    background-color: #1f2833;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #66fcf1;
+}
+
+.logo {
+    color: #66fcf1;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #66fcf1;
+}
+
+/* হিরো বা ব্যানার সেকশন */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero h1 span {
+    color: #66fcf1;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+/* বাটন স্টাইল */
+.btn {
+    display: inline-block;
+    background-color: #66fcf1;
+    color: #0b0c10;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #45a29e;
+    color: #ffffff;
+    box-shadow: 0 0 15px #66fcf1;
+}
+
+/* মেইন কন্টেন্ট সেকশন */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #66fcf1;
+    margin: 10px auto 0;
+}
+
+/* টুর্নামেন্ট কার্ড গ্রিড */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #1f2833;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #45a29e;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(102, 252, 241, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    background-color: #45a29e;
+    /* এখানে আপনার টুর্নামেন্টের ছবি ব্যবহার করতে পারবেন */
+    background: url('https://unsplash.com') center/cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* ফর্ম স্টাইল (Registration & Contact) */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1f2833;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #45a29e;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b0c10;
+    border: 1px solid #45a29e;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #66fcf1;
+    box-shadow: 0 0 5px #66fcf1;
+}
+
+/* ফুটার সেকশন */
+footer {
+    background-color: #1f2833;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #45a29e;
+    color: #858585;
+}
+/* সোশ্যাল মিডিয়া আইকন স্টাইল (ফুটারে ব্যবহারের জন্য) */
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #66fcf1;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #45a29e;
+    padding: 5px 12px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+    box-shadow: 0 0 10px #66fcf1;
+}
+
+/* পেমেন্ট সেকশন স্টাইল */
+.payment-box {
+    background-color: #0b0c10;
+    border: 1px dashed #45a29e;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.payment-box h4 {
+    color: #66fcf1;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.payment-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.payment-method {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.payment-method input[type="radio"] {
+    width: auto;
+}

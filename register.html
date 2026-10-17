@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Blackhole Esports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Blackhole Esports</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tournaments.html">Tournaments</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Tournament Registration</h2>
+        <div class="form-container">
+            <form action="#" method="POST">
+                <!-- টিম ইনফো -->
+                <div class="form-group">
+                    <label for="team-name">Team / Squad Name</label>
+                    <input type="text" id="team-name" required placeholder="Enter your team name">
+                </div>
+                <div class="form-group">
+                    <label for="leader-name">Team Leader Name</label>
+                    <input type="text" id="leader-name" required placeholder="Leader's real name">
+                </div>
+                <div class="form-group">
+                    <label for="leader-id">PUBG Character ID (Leader)</label>
+                    <input type="text" id="leader-id" required placeholder="e.g., 5123456789">
+                </div>
+                <div class="form-group">
+                    <label for="tournament-select">Select Tournament</label>
+                    <select id="tournament-select">
+                        <option value="ultimate-cup">Blackhole Ultimate Cup (Entry Fee: 100 BDT)</option>
+                        <option value="sanhok">Sanhok Showdown (Entry Fee: 50 BDT)</option>
+                    </select>
+                </div>
+
+                <!-- পемыেন্ট সেকশন -->
+                <div class="payment-box">
+                    <h4>Payment Instructions:</h4>
+                    <p>নিচের যেকোনো একটি নাম্বারে **Send Money** করুন:</p>
+                    <p>📱 <strong>bKash (Personal):</strong> 017XXXXXXXX</p>
+                    <p>📱 <strong>Nagad (Personal):</strong> 019XXXXXXXX</p>
+                    
+                    <div class="payment-method">
+                        <label><input type="radio" name="payment_type" value="bkash" checked> bKash</label>
+                        <label><input type="radio" name="payment_type" value="nagad"> Nagad</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="sender-number">Sender Mobile Number</label>
+                    <input type="text" id="sender-number" required placeholder="যে নাম্বার থেকে টাকা পাঠিয়েছেন">
+                </div>
+
+                <div class="form-group">
+                    <label for="trxid">Transaction ID (TxID)</label>
+                    <input type="text" id="trxid" required placeholder="e.g., 8N73X9LQP">
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ফুটার এবং সোশ্যাল মিডিয়া আইকন -->
+    <footer>
+        <p>&copy; 2026 Blackhole Esports. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://discord.gg" target="_blank">Discord</a>
+        </div>
+    </footer>
+
+    <!-- লাইভ চ্যাট অপশন (Tawk.to) -->
+    <!-- এটি একটি ফ্রি লাইভ চ্যাট স্ক্রিপ্ট। খেলোয়াড়রা সরাসরি আপনার সাথে ওয়েবসাইটে চ্যাট করতে পারবে -->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://tawk.to'; /* দ্রষ্টব্য: এটি একটি ডেমো চ্যাট আইডি */
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+
+</body>
+</html>
